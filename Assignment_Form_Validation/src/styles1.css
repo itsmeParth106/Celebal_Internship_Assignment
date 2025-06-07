@@ -1,0 +1,115 @@
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e3f2fd, #ffffff);
+  margin: 0;
+  padding: 40px 10px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+form {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+  box-sizing: border-box;
+}
+
+/* Headings */
+h2 {
+  text-align: center;
+  color: #0d47a1;
+  margin-bottom: 30px;
+}
+
+/* Form Elements */
+form > div {
+  margin-bottom: 20px;
+}
+
+label {
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+  display: block;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.3s ease-in-out;
+  box-sizing: border-box;
+}
+
+input:focus, select:focus {
+  border-color: #0d47a1;
+  outline: none;
+  box-shadow: 0 0 5px rgba(13, 71, 161, 0.2);
+}
+
+/* Toggle Password */
+.toggle-password {
+  margin-top: 5px;
+  font-size: 12px;
+  color: #1976d2;
+  cursor: pointer;
+  background: none;
+  border: none;
+  text-align: right;
+  padding: 0;
+}
+
+/* Submit Button */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #0d47a1;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+button:hover {
+  background-color: #1565c0;
+}
+
+button[disabled] {
+  background-color: #90a4ae;
+  cursor: not-allowed;
+}
+
+/* Error Text */
+.error {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Submitted Data Styling */
+pre {
+  background: #f1f8e9;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #c5e1a5;
+  margin-top: 30px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 600px) {
+  form {
+    padding: 25px;
+    margin: 10px;
+  }
+}
